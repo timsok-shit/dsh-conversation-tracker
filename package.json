@@ -1,0 +1,31 @@
+{
+  "name": "dsh-conversation-tracker",
+  "version": "0.4.0",
+  "description": "DSH Web Conversation Navigator（对话追踪导航条）：节点直接来自当前 conversation 完整 messages 数据（user/steering messages.filter().map()，assistant 0 节点），messageId 绑定真实消息身份（seq / messageId）；仅 hover/focus/touch/drag 时把同一元素从小胶囊形变为原文 preview（纯本地、禁 AI 总结）；定位读取 AppFrame 侧边栏列宽、默认不与侧边栏重叠；点击节点平滑定位、正常滚动经 IntersectionObserver 同步 active、支持拖动导航与移动端 touch、切换会话自动重绑、历史消息不在 DOM 时仍保留节点；长对话性能优化。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "README.md"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "conversation",
+    "tracker",
+    "navigator",
+    "scrollmap"
+  ],
+  "license": "MIT"
+}
